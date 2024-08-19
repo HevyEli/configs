@@ -26,3 +26,10 @@ alias contexts='kubectl config get-contexts'
 alias awsconfig='cat ~/.aws/config'
 alias awslogin='aws sso login; aws configure list-profiles'
 alias awsprofiles='aws configure list-profiles'
+
+#Custom
+alias randomPassGen="python3 ~/Documents/repos/private/tools/randomPassGen/randomPassGen.py"
+alias jump1="ssh -i ~/.ssh/michaleli-key-ecdsa eliasm1@jump-cz-1.fed.tmo"
+alias jump2="ssh -i ~/.ssh/michaleli-key-ecdsa eliasm1@jump-cz-2.fed.tmo"
+alias createHelmProj="/Users/eliasm1/Documents/repos/private/tools/createHelmProj.sh"
+alias cat="bat --paging=never"
