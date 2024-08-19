@@ -29,6 +29,7 @@ disabled = false
 # ---
 
 [aws]
+disabled = false
 format = ''
 style = 'bold blue'
 [aws.region_aliases]
@@ -68,6 +69,12 @@ staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
 
+[git_metrics]
+format = "([+$added]($added_style))[]($added_style)"
+added_style = "fg:#1C3A5E bg:#FCF392"
+deleted_style = "fg:bright-red bg:235"
+disabled = false
+
 # Shows kubernetes context and namespace
 [kubernetes]
 format = '[󱃾 $context\($namespace\)](bold purple) '
@@ -86,7 +93,7 @@ disabled = true
 disabled = true
 
 [helm]
-disabled = false
+format = 'via [⎈ $version](bold white) '
 
 [python]
 disabled = true
@@ -99,3 +106,4 @@ disabled = true
 
 [terraform]
 disabled = false
+#format = '[🏎💨 $version$workspace]($style) '
